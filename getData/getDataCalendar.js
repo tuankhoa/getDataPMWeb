@@ -178,7 +178,7 @@ module.exports = function () {
                     machineTask.workOrderCount = count
                     dataExport.push(machineTask)
                 }
-                fs.writeFileSync(`./json/${plant.name}/${line.name.toUpperCase()}_${machine.name.toUpperCase()}.json`, JSON.stringify(dataExport))
+                fs.writeFileSync(`./json/test/${line.name.toUpperCase()}_${machine.name.toUpperCase()}.json`, JSON.stringify(dataExport))
             })
         })
         console.log('done======================================================================================================================================!')

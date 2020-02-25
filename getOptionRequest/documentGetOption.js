@@ -1,7 +1,7 @@
-module.exports = function (lineId, token) {
+module.exports = function (token, page) {
     return {
         'method': 'GET',
-        'url': `https://pmweb.az.team/api/machines?lineId.equals=${lineId}`,
+        'url': `https://pmweb.az.team/api/documents?page=${page}&size=2000&sort=id,asc`,
         'headers': {
             'Authorization': `Bearer ${token}`,
             'User-Agent': 'PostmanRuntime/7.22.0',
